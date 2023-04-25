@@ -146,9 +146,12 @@ body {
   color: #fff;
   text-align: center;
   margin: 0 auto;
-  width: 24ch;
+  width: 23ch;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: 2.5px 2.5px #a6720b;
   animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite; }
   @media only screen and (max-width: 37.5em) {
     .white-head {
@@ -189,7 +192,7 @@ body {
     width: 13rem; }
   .header__text-box {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 55%;
     text-align: center; }
     @media only screen and (max-width: 37.5em) {
@@ -229,7 +232,8 @@ body {
     display: block;
     font-size: 4rem;
     font-weight: 800;
-    letter-spacing: 0.5rem; }
+    letter-spacing: 0.5rem;
+    text-shadow: 1px 1px #a6720b; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 0.3rem; } }
@@ -269,6 +273,50 @@ body {
     background-color: transparent; }
   100% {
     background-color: #000000; } }
+
+.full-width {
+  width: 102vw;
+  height: 102vh; }
+
+.alert {
+  display: flex;
+  height: auto; }
+
+.notice-board {
+  display: inline-block;
+  margin: 0 auto;
+  width: 600px;
+  height: 100%;
+  border-top: 6px #000000;
+  border-bottom: 6px #000000;
+  border-style: solid;
+  border-radius: 35px; }
+
+@media only screen and (max-width: 50em) {
+  .notice-board {
+    border-radius: 0 !important; } }
+
+.white-head1 {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 15ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
+  font-size: 4rem !important;
+  text-shadow: 2px 2px #000000;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .white-head1 {
+      font-size: 3.2rem !important; } }
+
+.cropper {
+  padding-top: 4rem;
+  background-color: #a6720b;
+  margin-top: 7rem;
+  padding-bottom: 7rem;
+  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%); }
 
 .carousel-container {
   border-radius: 30px;
