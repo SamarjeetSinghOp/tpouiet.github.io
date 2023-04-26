@@ -56,4 +56,3 @@ setInterval(() => {
     timer = _timer; // reset timer
   }
 }, 1000); // 1sec
-
