@@ -389,17 +389,17 @@ body {
   color: #000000;
   text-align: center;
   margin: 0 auto !important;
-  width: 28ch;
+  width: 23ch;
   white-space: nowrap;
   overflow: hidden;
   font-weight: 900 !important;
   animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
-  font-size: 2.5rem !important;
+  font-size: 2.9rem !important;
   text-shadow: 1px 1px #a6720b; }
 
 @media only screen and (max-width: 37.5em) {
   .white-headf {
-    font-size: 2.4rem !important; } }
+    font-size: 2.8rem !important; } }
 
 .header-button {
   animation: moveinbottom .5s ease-out .75s;
