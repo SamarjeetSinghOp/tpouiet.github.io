@@ -2,26 +2,26 @@ let slideIndex = 0;
 showSlides();
 
 // Next-previous control
-function nextSlide() {
+async function nextSlide() {
   slideIndex++;
   showSlides();
   timer = _timer; // reset timer
 }
 
-function prevSlide() {
+async function prevSlide() {
   slideIndex--;
   showSlides();
   timer = _timer;
 }
 
 // Thumbnail image controlls
-function currentSlide(n) {
+async function currentSlide(n) {
   slideIndex = n - 1;
   showSlides();
   timer = _timer;
 }
 
-function showSlides() {
+async function showSlides() {
   let slides = document.querySelectorAll(".mySlides");
   let dots = document.querySelectorAll(".dots");
 
