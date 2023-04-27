@@ -25,7 +25,7 @@ google.charts.setOnLoadCallback(me2022);
 google.charts.setOnLoadCallback(me2023);
 
 
-function bt2018() {
+async function bt2018() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
@@ -72,7 +72,7 @@ function cse2018() {
     chart.draw(data, options);
 }
 
-function ec2018() {
+async function ec2018() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 6], ["IBM", 1], ["Cryptographics IT Solution", 2], ["Wipro Limited", 1], ["British Telecom", 2], ["Samsung", 1], ["Talent Pull", 7], ["Perfect RFID", 1]
@@ -96,7 +96,7 @@ function ec2018() {
     chart.draw(data, options);
 }
 
-function me2018() {
+async function me2018() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 2], ["Adani", 5], ["Daikin AC", 1], ["Samsung", 2], ["Bosch", 3]
@@ -119,7 +119,7 @@ function me2018() {
     chart.draw(data, options);
 }
 
-function cse2019() {
+async function cse2019() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 40],["TCS", 23], ["IBM", 25], ["Yamaha Motors", 4], ["Wipro Limited", 2], ["Cognizent", 1], ["IDS Infotech", 1]
@@ -142,7 +142,7 @@ function cse2019() {
     chart.draw(data, options);
 }
 
-function cse2020() {
+async function cse2020() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["TCS", 27], ["Hexaware", 6], ["Cognizant", 14], ["Capegemini", 5], ["Hughes Systique", 2], ["Yamaha Motors", 2], ["Amazon", 2], ["Byjus", 1], ["Daffodils", 1], ["Infosys", 46]
@@ -165,7 +165,7 @@ function cse2020() {
     chart.draw(data, options);
 }
 
-function cse2021() {
+async function cse2021() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["TCS", 21], ["Infosys", 24], ["Accenture", 8], ["Code Quotient", 6], ["Hexaware", 2], ["Rupine", 1], ["Yamaha Motors", 2], ["Wipro", 5], ["Capgemini", 1], ["Slemens", 1], ["Byjus", 1], ["Spider Innovative Technologies", 1], ["KPMG", 1], ["Zibal Technology", 1]
@@ -187,7 +187,7 @@ function cse2021() {
     chart.draw(data, options);
 }
 
-function cse2022() {
+async function cse2022() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 24], ["Yamaha Motors", 3], ["Daffodil", 4], ["Hexaware", 3], ["Wipro", 36], ["Step2gen", 7], ["Henceforth", 1], ["Bebo Technology", 25], ["CronJ", 2], ["Forcebolt", 4], ["TCS", 20], ["Hitachi", 2], ["Dealer Matrix", 4], ["Byjus", 1], ["Aspirefox", 7], ["Indiamart", 10], ["Info Edge", 1], ["Josh Technology", 1], ["Deloitte", 2], ["Pentagon CSR", 3], ["Byteridge Software", 1], ["Vitalic Health Pvt Ltd", 1]
@@ -210,7 +210,7 @@ function cse2022() {
     chart.draw(data, options);
 }
 
-function cse2023() {
+async function cse2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Deloitte", 6], ["Input Zero Pvt Ltd.", 5], ["Solitaire Infosys", 2], ["TCS", 8], ["Antier Solutions Pvt Ltd", 2], ["Infosys", 9], ["Hexaware", 7], ["Hughes Systique", 2], ["ADP India", 5], ["Embitel Technologies", 17], ["Byteridge Software", 2], ["Indus Valley", 2], ["Yamaha Motors Solution", 10], ["Bebo Educational Foundation", 21], ["Learning Routes", 2]
@@ -232,7 +232,7 @@ function cse2023() {
     chart.draw(data, options);
 }
 
-function bt2019() {
+async function bt2019() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
@@ -255,7 +255,7 @@ function bt2019() {
     chart.draw(data, options);
 }
 
-function bt2020() {
+async function bt2020() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
@@ -278,7 +278,7 @@ function bt2020() {
     chart.draw(data, options);
 }
 
-function bt2021() {
+async function bt2021() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
@@ -301,7 +301,7 @@ function bt2021() {
     chart.draw(data, options);
 }
 
-function bt2022() {
+async function bt2022() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
@@ -324,7 +324,7 @@ function bt2022() {
     chart.draw(data, options);
 }
 
-function bt2023() {
+async function bt2023() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
@@ -348,7 +348,7 @@ function bt2023() {
     chart.draw(data, options);
 }
 
-function ec2019() {
+async function ec2019() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 16], ["TCS", 2], ["IBM", 6], ["Vivo", 3], ["Vector India", 1]
@@ -372,7 +372,7 @@ function ec2019() {
     chart.draw(data, options);
 }
 
-function ec2020() {
+async function ec2020() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 21], ["TCS", 6], ["Vivo", 11], ["Hexaware", 8], ["Cognizant", 4]
@@ -396,7 +396,7 @@ function ec2020() {
     chart.draw(data, options);
 }
 
-function ec2021() {
+async function ec2021() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["TCS", 3], ["Infosys", 3], ["Accenture", 3], ["Code Quotient", 2], ["NewGen", 4], ["IBM", 2], ["HCL", 1], ["Manras Technology", 1], ["Wipro", 2], ["Uno Minda", 1], ["Zopper", 1], ["Tech Mahindra", 1]
@@ -420,7 +420,7 @@ function ec2021() {
     chart.draw(data, options);
 }
 
-function ec2022() {
+async function ec2022() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 9], ["Hexaware", 1], ["Wipro", 14], ["Henceforth", 4], ["Bebo Technology", 8], ["Dealer Matrix", 1], ["Xenon Stack", 1], ["TT Consultant", 2], ["Byjus", 1], ["Exicom", 1], ["Coforge", 1], ["ABACA Pvt Ltd", 5], ["Signoff", 2], ["Qspider", 5], ["Pentagon CSR", 2], ["Anviam Solutions Pvt Ltd", 1], ["Lumax Industries Pvt Ltd", 1], ["Frick India Corporation", 1], ["TCS", 8]
@@ -444,7 +444,7 @@ function ec2022() {
     chart.draw(data, options);
 }
 
-function ec2023() {
+async function ec2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 2], ["Hexaware", 3], ["ADP India", 3], ["Embitel Technologies", 3], ["Indus Valley", 1], ["SOTI Inc Gurugram", 1], ["Bebo Educational Foundation", 11], ["Input Zero Pvt Ltd", 5] , ["TCS", 11], ["JSW (TalenTech 2023)", 4], ["Antier Solutions Pvt Ltd", 3], ["Learning Routes", 2]
@@ -468,7 +468,7 @@ function ec2023() {
     chart.draw(data, options);
 }
 
-function me2019() {
+async function me2019() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 10], ["Adani", 1], ["Daikin AC", 2]
@@ -491,7 +491,7 @@ function me2019() {
     chart.draw(data, options);
 }
 
-function me2020() {
+async function me2020() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 5]
@@ -514,7 +514,7 @@ function me2020() {
     chart.draw(data, options);
 }
 
-function me2021() {
+async function me2021() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["NewGen", 4], ["Thermal Panipat", ]
@@ -538,7 +538,7 @@ function me2021() {
 }
 
 
-function me2022() {
+async function me2022() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["Infosys", 1], ["Wipro", 3], ["TCS", 2], ["Byjus", 1], ["Green Fuel Pvt Ltd", 4], ["ABACA Pvt Ltd", 5], ["Intellipaat", 1], ["Qspider", 3], ["Chanderpur Solid Works", 2], ["Lumax Industries Ltd", 4], ["Indosaw Industrial Products Pvt Ltd", 1], ["Amber Industries", 3], ["Brightway Soles", 1], ["Advance Microdevices (MDI)", 1], ["JBM Technology", 1], ["Daikin AC", 3], ["IFB", 2], ["Continental Engine India", 1], ["Federal Bank", 1], ["Frick India Cooperation", 2], ["Orion Water Treatment", 1], ["Honda Cars India Pvt Ltd.", 8], ["Escorts Kubota Ltd", 7]
@@ -561,7 +561,7 @@ function me2022() {
     chart.draw(data, options);
 }
 
-function me2023() {
+async function me2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
         ["ISGEC Heavy Engineering Ltd", 2], ["JSW (TalenTech 2023)", 5], ["Maruti Suzuki India Ltd.", 3]
