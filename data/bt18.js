@@ -517,7 +517,7 @@ async function me2020() {
 async function me2021() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["NewGen", 4], ["Thermal Panipat", ]
+        ["NewGen", 4], ["Thermal Panipat", 1]
     ]);
 
     var options = {
