@@ -460,7 +460,7 @@ body {
   width: 100%; }
 
 .fitem {
-  background-image: linear-gradient(to bottom, rgba(241, 241, 241, 0.511) 0%, rgba(249, 255, 249, 0.498) 100%), url(../../img/cardbg2.jpg);
+  background-image: linear-gradient(to bottom, rgba(241, 241, 241, 0.511) 0%, rgba(249, 255, 249, 0.498) 100%), url(../img/cardbg2.jpg);
   height: 32rem;
   font-size: 1.7rem;
   width: 35rem;
