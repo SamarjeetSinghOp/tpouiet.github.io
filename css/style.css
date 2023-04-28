@@ -34,7 +34,7 @@ body {
   overflow: hidden;
   max-width: 800px;
   position: relative;
-  box-shadow: 0 0 30px -20px #223344;
+  box-shadow: 0 0 30px -20px #000000;
   margin: auto;
   z-index: 0;
   border-top: 4px #a6720b;
@@ -389,19 +389,17 @@ body {
   color: #000000;
   text-align: center;
   margin: 0 auto !important;
-  width: 21ch;
+  width: 28ch;
   white-space: nowrap;
   overflow: hidden;
   font-weight: 900 !important;
   animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
-  font-size: 3.5rem !important;
+  font-size: 2.5rem !important;
   text-shadow: 1px 1px #a6720b; }
 
 @media only screen and (max-width: 37.5em) {
   .white-headf {
-    margin: 0 0 !important;
-    width: 19ch;
-    font-size: 3.4rem !important; } }
+    font-size: 2.4rem !important; } }
 
 .header-button {
   animation: moveinbottom .5s ease-out .75s;
@@ -454,6 +452,79 @@ body {
 .btn__popup::after {
   background-color: #008077 !important; }
 
+.fcontainer {
+  display: flex;
+  color: black;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+
+.fitem {
+  background-image: linear-gradient(to bottom, rgba(241, 241, 241, 0.511) 0%, rgba(249, 255, 249, 0.498) 100%), url(../../img/cardbg2.jpg);
+  height: 32rem;
+  font-size: 1.7rem;
+  width: 35rem;
+  padding: 2rem;
+  margin: 3rem;
+  text-align: justify;
+  box-shadow: 0 0 25px -3px #000000;
+  text-shadow: 1px 1px #ffffff; }
+
+.felement {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #000000;
+  text-shadow: 0.5px 0.5px #a6720b; }
+
+.fitem:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0 25px -3px #ffffff; }
+
+.f1 {
+  border: 0.5rem solid black;
+  border-radius: 30px; }
+
+.f2 {
+  border: 0.5rem solid black;
+  border-radius: 30px; }
+
+.f3 {
+  border: 0.5rem solid black;
+  border-radius: 30px; }
+
+.f4 {
+  border: 0.5rem solid black;
+  border-radius: 30px; }
+
+.f5 {
+  border: 0.5rem solid black;
+  border-radius: 30px; }
+
+.fa-sharp {
+  margin-right: 1rem; }
+
+.white-head3 {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 11ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
+  font-size: 4rem !important;
+  text-shadow: 2px 2px #000000;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .white-head1 {
+    font-size: 3.2rem !important; } }
+
 .alert {
   display: flex;
   height: auto; }
@@ -491,8 +562,16 @@ body {
   padding-top: 4rem;
   background-color: #a6720b;
   margin-top: 7rem;
-  padding-bottom: 7rem;
-  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%); }
+  padding-bottom: 5rem;
+  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+  width: 100%; }
+  .cropper-sub {
+    padding-top: 4rem;
+    background-color: #a6720b;
+    margin-top: 7rem;
+    clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
+    width: 100%;
+    padding-bottom: 7rem; }
 
 .content {
   display: flex;
