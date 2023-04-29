@@ -48,7 +48,7 @@ async function bt2018() {
     chart.draw(data, options);
 }
 
-function cse2018() {
+async function cse2018() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
