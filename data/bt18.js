@@ -1,6 +1,6 @@
 google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(
-    function () { // Anonymous function that calls drawChart1 and drawChart2
+    function() { // Anonymous function that calls drawChart1 and drawChart2
         bt2018();
         me2018();
         ec2018();
