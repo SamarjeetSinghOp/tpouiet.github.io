@@ -1,28 +1,31 @@
 google.charts.load('current', { 'packages': ['corechart'] });
-google.charts.setOnLoadCallback(bt2018);
-google.charts.setOnLoadCallback(me2018);
-google.charts.setOnLoadCallback(ec2018);
-google.charts.setOnLoadCallback(cse2018);
-google.charts.setOnLoadCallback(cse2019);
-google.charts.setOnLoadCallback(cse2020);
-google.charts.setOnLoadCallback(cse2021);
-google.charts.setOnLoadCallback(cse2022);
-google.charts.setOnLoadCallback(cse2023);
-google.charts.setOnLoadCallback(bt2019);
-google.charts.setOnLoadCallback(bt2020);
-google.charts.setOnLoadCallback(bt2021);
-google.charts.setOnLoadCallback(bt2022);
-google.charts.setOnLoadCallback(bt2023);
-google.charts.setOnLoadCallback(ec2019);
-google.charts.setOnLoadCallback(ec2020);
-google.charts.setOnLoadCallback(ec2021);
-google.charts.setOnLoadCallback(ec2022);
-google.charts.setOnLoadCallback(ec2023);
-google.charts.setOnLoadCallback(me2019);
-google.charts.setOnLoadCallback(me2020);
-google.charts.setOnLoadCallback(me2021);
-google.charts.setOnLoadCallback(me2022);
-google.charts.setOnLoadCallback(me2023);
+google.charts.setOnLoadCallback(
+    function () { // Anonymous function that calls drawChart1 and drawChart2
+        bt2018();
+        me2018();
+        ec2018();
+        cse2018();
+        cse2019();
+        cse2020();
+        cse2021();
+        cse2022();
+        cse2023();
+        bt2019();
+        bt2020();
+        bt2021();
+        bt2022();
+        bt2023();
+        ec2019();
+        ec2020();
+        ec2021();
+        ec2022();
+        ec2023();
+        me2019();
+        me2020();
+        me2021();
+        me2022();
+        me2023();
+    });
 
 
 async function bt2018() {
@@ -122,7 +125,7 @@ async function me2018() {
 async function cse2019() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["Infosys", 40],["TCS", 23], ["IBM", 25], ["Yamaha Motors", 4], ["Wipro Limited", 2], ["Cognizent", 1], ["IDS Infotech", 1]
+        ["Infosys", 40], ["TCS", 23], ["IBM", 25], ["Yamaha Motors", 4], ["Wipro Limited", 2], ["Cognizent", 1], ["IDS Infotech", 1]
     ]);
 
     var options = {
@@ -305,7 +308,7 @@ async function bt2022() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["Pulsus", 2], ["TCS", 2],["Byjus", 3], ["IDS", 1], ["Advanced Microdevices Pvt Ltd", 1]
+        ["Pulsus", 2], ["TCS", 2], ["Byjus", 3], ["IDS", 1], ["Advanced Microdevices Pvt Ltd", 1]
     ]);
     var options = {
         pieHole: 0.4,
@@ -331,7 +334,7 @@ async function bt2023() {
         ["Unavailable", 1]
     ]);
     var options = {
-        colors:['grey'],
+        colors: ['grey'],
         pieHole: 0.4,
         legend: { position: 'bottom' },
         width: '100%',
@@ -447,7 +450,7 @@ async function ec2022() {
 async function ec2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["Infosys", 2], ["Hexaware", 3], ["ADP India", 3], ["Embitel Technologies", 3], ["Indus Valley", 1], ["SOTI Inc Gurugram", 1], ["Bebo Educational Foundation", 11], ["Input Zero Pvt Ltd", 5] , ["TCS", 11], ["JSW (TalenTech 2023)", 4], ["Antier Solutions Pvt Ltd", 3], ["Learning Routes", 2]
+        ["Infosys", 2], ["Hexaware", 3], ["ADP India", 3], ["Embitel Technologies", 3], ["Indus Valley", 1], ["SOTI Inc Gurugram", 1], ["Bebo Educational Foundation", 11], ["Input Zero Pvt Ltd", 5], ["TCS", 11], ["JSW (TalenTech 2023)", 4], ["Antier Solutions Pvt Ltd", 3], ["Learning Routes", 2]
     ]);
 
     var options = {
