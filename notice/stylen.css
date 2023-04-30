@@ -3,12 +3,16 @@
     color: #a6720b;
     padding: 0.2rem;
     text-decoration: none;
+    font-size: 22px;
 
 }
 
 @media only screen and (max-width: 300px) {
+.nt{
+    font-size: 15px;
+}
+
     .body {
-      font-size: 12px; 
     padding-right: 1rem;
     padding-left: 1rem;} }
 
@@ -20,4 +24,38 @@
 .nt:active {
     color: #ffffff;
     background-color: #a6720b;
+}
+
+.new {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 10px;
+	animation: color_change 1s infinite alternate;
+}
+
+@keyframes color_change {
+	0% {
+        color: red;
+    }
+
+    20% {
+        color: lightgreen;
+    }
+
+    40% {
+        color: cyan;
+    }
+
+    60% {
+        color: rgb(0, 30, 255);
+    }
+
+    80% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
 }
