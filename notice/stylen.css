@@ -39,26 +39,22 @@
 
 @keyframes color_change {
 	0% {
-        color: red;
+        color: #a6720b;
     }
 
-    20% {
-        color: lightgreen;
+    25% {
+        color: #5e4004;
     }
 
-    40% {
-        color: cyan;
+    50% {
+        color: #000000;
     }
 
-    60% {
-        color: rgb(0, 30, 255);
-    }
-
-    80% {
-        color: orange;
+    75% {
+        color: #5e4004;
     }
 
     100% {
-        color: red;
+        color: #a6720b;
     }
 }
