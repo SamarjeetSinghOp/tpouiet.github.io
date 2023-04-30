@@ -9,11 +9,11 @@
 
 @media only screen and (max-width: 500px) {
 .nt{
-    font-size: 18px;
+    font-size: 16px;
 }
 .new {
-    font-size: 8px;
-    margin-left: 5px;}
+    font-size: 6px;
+    margin-left: 3px;}
 
     .body {
     padding-right: 1rem;
