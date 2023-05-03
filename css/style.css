@@ -205,7 +205,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #e4e4e4;;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -573,6 +572,13 @@ body {
     clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
     width: 100%;
     padding-bottom: 7rem; }
+  .cropper-sub2 {
+    padding-top: 4rem;
+    background-color: #a6720b;
+    margin-top: 7rem;
+    clip-path: polygon(0 6%, 50% 0, 100% 6%, 100% 100%, 50% 94%, 0 100%);
+    width: 100%;
+    padding-bottom: 7rem; }
 
 .content {
   display: flex;
@@ -778,6 +784,153 @@ body {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.team {
+  color: white;
+  text-align: center;
+  font-size: 5.5rem;
+  text-shadow: 0rem 0rem 1rem #ffcc00; }
+
+.team-lead-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.team-lead {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: 3rem;
+  align-items: center;
+  width: 33rem;
+  background-image: url(../img/bgt.jpg);
+  border-radius: 30px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 2rem;
+  box-shadow: 0 0 25px -3px #000000; }
+  .team-lead::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url(../img/bgt.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(#a6720b00, #a6720b00), linear-gradient(#a6720b00, #a6720b00), linear-gradient(#000000, #000000);
+    animation: rotate 8s linear infinite; }
+  .team-lead::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 3px;
+    top: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-image: url(../img/bgt.jpg);
+    border-radius: 30px; }
+
+.name {
+  color: #a6720b;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem #000000; }
+
+.image {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 40rem;
+  border: 0.5rem #a6720b;
+  border-style: solid;
+  margin-bottom: 1.3rem; }
+
+.image8 {
+  object-fit: cover; }
+
+.last {
+  background-color: #dd921a;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem; }
+
+.copy-right {
+  text-align: end; }
+
+.teacher-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  text-align: center; }
+
+.photo {
+  height: 25rem;
+  width: 20rem;
+  border-radius: 1rem; }
+
+.teacher {
+  align-items: center;
+  width: 20rem;
+  margin: 1.5rem; }
+
+.team1 {
+  color: white;
+  text-align: center;
+  text-shadow: 0rem 0rem 1rem #ffcc00;
+  margin-bottom: 1rem; }
+
+.ourteam {
+  color: #000000;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+.ourlogo {
+  margin-top: 1.2rem; }
+
+.ouricon {
+  width: 2.5rem; }
+
+.ouricon:hover {
+  transition: all 0.7s;
+  transform: scale(1.2); }
+
+.ouriconlast {
+  margin-left: 5rem; }
+
+.name1 {
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+  text-shadow: 0.05rem 0.05rem #000000; }
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn); } }
+
+.team-lead:hover .image {
+  transform: scale(1.1);
+  border-radius: 2rem;
+  transition: all 1s ease-in-out; }
+
+.white-head6 {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 24ch;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: 2.5px 2.5px #a6720b;
+  animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite; }
+  @media only screen and (max-width: 37.5em) {
+    .white-head6 {
+      font-size: 3.2rem !important; } }
 
 .carousel-container {
   border-radius: 30px;
