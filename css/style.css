@@ -573,12 +573,12 @@ body {
     width: 100%;
     padding-bottom: 7rem; }
   .cropper-sub2 {
-    padding-top: 4rem;
+    padding-top: 5rem;
     background-color: #a6720b;
     margin-top: 7rem;
-    clip-path: polygon(0 6%, 50% 0, 100% 6%, 100% 100%, 50% 94%, 0 100%);
+    clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
     width: 100%;
-    padding-bottom: 7rem; }
+    padding-bottom: 8rem; }
 
 .content {
   display: flex;
