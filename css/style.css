@@ -888,7 +888,8 @@ body {
 .ourteam {
   color: #000000;
   margin-top: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+  text-align:justify; }
 
 .ourlogo {
   margin-top: 1.2rem; }
