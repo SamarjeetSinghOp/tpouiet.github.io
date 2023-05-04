@@ -1,11 +1,11 @@
-/* ---- particles.js config ---- */
+
  particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 380,
       "density": {
         "enable": true,
-        "value_area": 2222
+        "value_area": 3333
       }
     },
     "color": {
@@ -27,11 +27,11 @@
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.1,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 2,
         "opacity_min": 0.1,
         "sync": false
       }
@@ -50,12 +50,12 @@
       "enable": true,
       "distance": 150,
       "color": "#000000",
-      "opacity": 0.3,
+      "opacity": 0.1,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -109,9 +109,6 @@
   },
   "retina_detect": true
 });
-
-
-/* ---- stats.js config ---- */
 
 var count_particles, stats, update;
 stats = new Stats;

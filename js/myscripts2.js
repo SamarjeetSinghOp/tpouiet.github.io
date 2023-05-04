@@ -1,11 +1,10 @@
 let slideIndex = 0;
 showSlides();
 
-// Next-previous control
 async function nextSlide() {
   slideIndex++;
   showSlides();
-  timer = _timer; // reset timer
+  timer = _timer;
 }
 
 async function prevSlide() {
@@ -14,7 +13,6 @@ async function prevSlide() {
   timer = _timer;
 }
 
-// Thumbnail image controlls
 async function currentSlide(n) {
   slideIndex = n - 1;
   showSlides();
@@ -28,12 +26,10 @@ async function showSlides() {
   if (slideIndex > slides.length - 1) slideIndex = 0;
   if (slideIndex < 0) slideIndex = slides.length - 1;
   
-  // hide all slides
   slides.forEach((slide) => {
     slide.style.display = "none";
   });
   
-  // show one slide base on index number
   slides[slideIndex].style.display = "block";
   
   dots.forEach((dot) => {
@@ -43,16 +39,14 @@ async function showSlides() {
   dots[slideIndex].classList.add("active");
 }
 
-// autoplay slides --------
-let timer = 7; // sec
+let timer = 7;
 const _timer = timer;
 
-// this function runs every 1 second
 setInterval(() => {
   timer--;
 
   if (timer < 1) {
     nextSlide();
-    timer = _timer; // reset timer
+    timer = _timer;
   }
-}, 1000); // 1sec
+}, 1000); 

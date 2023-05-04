@@ -4,7 +4,7 @@ const cursorSpan = document.querySelector(".cursor");
 const textArray = ["Welcome to","आपका स्वागत है","ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ","स्वागतम् अस्ति"];
 const typingDelay = 200;
 const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -36,7 +36,7 @@ async function erase() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+document.addEventListener("DOMContentLoaded", function() { 
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
