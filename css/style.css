@@ -1398,13 +1398,23 @@ body {
       margin: 0 auto;
   }
   
-  .row:not(:last-child) {
+  .row {
       display: flex;
       justify-content: space-between;
       margin: 0 -10px;
       border-bottom: 2px solid #000;
       padding-bottom: 2.4rem;
-  }
+ }
+
+.rowl {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -10px;
+      border-bottom: 0px solid #000 !important;
+      padding-bottom: 2.4rem;
+ }
+
+
   .copyright {
       width: 100%;
       text-align: center;
