@@ -13,6 +13,42 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+        <script>
+            function check() {
+                let inputs = document.getElementById('navi-toggle');
+                inputs.checked = true;
+            }
+            function uncheck() {
+                let inputs = document.getElementById('navi-toggle');
+                inputs.checked = false;
+            }
+            window.onload = function () {
+                window.addEventListener('load', check, false);
+            }
+        </script>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#notice" class="navigation__link" onclick="uncheck()">Notice
+                        Board</a></li>
+                <li class="navigation__item"><a href="#placement" class="navigation__link"
+                        onclick="uncheck()">Placements</a></li>
+                <li class="navigation__item"><a href="#at" class="navigation__link" onclick="uncheck()">About Us</a></li>
+                <li class="navigation__item"><a href="#ot" class="navigation__link" onclick="uncheck()">Our Team</a></li>
+                <li class="navigation__item"><a href="#co" class="navigation__link" onclick="uncheck()">Coordinators</a>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link" onclick="uncheck()">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <header class=header>
         <div class=bg-video>
             <div class=bg-video__content>
@@ -475,66 +511,198 @@
             </div>
         </div>
     </div>
+    <h2 class="heading-primary--main white-head8">Testimonials</h2>
+    <section class="testimonial-area">
+        <div class="container">
+            <div class="testimonial-content owl-carousel">
+                <div class="single-testimonial">
+                    <p> It seems like it was just yesterday that I nervously headed to the Kurukshetra UIET hallway for
+                        the recording.
+                        All I dreamed of was getting good rankings from here.I never expected UIET Kurukshetra to
+                        improve and improve
+                        me so much.With the world class facilities of UIET Kurukshetra and The approachable teachers
+                        were always helping
+                        and motivating me to reach new heights every day. I would also like to mention the various clubs
+                        and societies,
+                        seniors and juniors who have helped me grow both professionally and socially. I would like to
+                        express my sincere
+                        gratitude to everyone who has been directly or indirectly involved in my journey. I achieved the
+                        highest ranking
+                        in college on Amazon. I can confidently say that this was only possible thanks to the
+                        environment and the various
+                        resources provided by UIET Kurukshetra. Besides that, studying at such a prestigious institution
+                        taught me to
+                        be compassionate and stay grounded in life. I vow to do my best and bring glory to my alma
+                        mater.</p>
+                    <div class="test-info">
+                        <div class="test-image">
+                            <a href="https://www.linkedin.com/in/deepakmalik1999"><img src="img/Deepak.jpg" alt=""
+                                    class="size"></a>
+                        </div>
+                        <div class="test-details">
+                            <h6>Deepak Malik</h6>
+                            <span>Alumi from <b>Amazon</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial">
+                    <p>The reminiscence of my journey at UIET Kurukshetra never cease to exhilarate me.
+                        The ambience of the Institute, the pedagogical methods followed, the support provided
+                        by the professors at each and every facet, the avenue of opportunities for all round
+                        development of the student are magnificent. In these years of my college life, I have
+                        experienced the elegance of Computer science which eventually landed me in Hexaware.
+                        I was also a member of E-cell, UIET. I have indulged myself in various cultural activities
+                        too. Above all these, the crucial learning during this period is to find the balance
+                        between various activities in my plate. If I come across any scenario that challenges
+                        me in future, I will definitely look back at the life lessons of my alma mater and
+                        extract the zeal to come out of it in flying colors. The four years spent here certainly
+                        paved a path for all the coming years of my career.</p>
+                    <div class="test-info">
+                        <div class="test-image">
+                            <a href="https://www.linkedin.com/in/pawansinghla300"><img src="img/Pawan.jpg" alt=""
+                                    class="size"></a>
+                        </div>
+                        <div class="test-details">
+                            <h6>Pawan Singh</h6>
+                            <span>Alumi from <b>Hexaware</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="cropper-sub2">
-        <h2 class="heading-primary--main white-head3">Our Team</h2>
-            <div class="team-lead-main">
-                <div class="team-lead l3">
-                    <img loading="lazy" src="img/direc.990a53616fac14413f86.png" class="image">
-                    <hr>
-                    <h1 class="name">DR. SUNIL DHINGRA</h1>
-                    <h2 class="name name1">DIRECTOR</h2>
-                    <hr>
-                    <div class="ourteam">
-                    The Department of Training and Placement helps students get placed in top industrial establishments. 
+        <h2 class="heading-primary--main white-head3" id="ot">Our Team</h2>
+        <div class="team-lead-main">
+            <div class="team-lead l3">
+                <img loading="lazy" src="img/direc.990a53616fac14413f86.png" class="image">
+                <hr>
+                <h1 class="name">DR. SUNIL DHINGRA</h1>
+                <h2 class="name name1">DIRECTOR</h2>
+                <hr>
+                <div class="ourteam">
+                    The Department of Training and Placement helps students get placed in top industrial establishments.
                     We thank organizations for trusting us and hope to maintain a strong relationship with them.
                 </div>
                 <hr>
                 <div class="ourlogo">
                     <a href="https://www.linkedin.com/in/dr-sunil-dhingra-18780949" class="ourdiv">
-                    <img src="img/linkedin.png" alt="" class="ouricon"></a>
+                        <img src="img/linkedin.png" alt="" class="ouricon"></a>
                     <a href="mailto:sdhingra2015@kuk.ac.in" class="ourdiv">
                         <img src="img/email.png" alt="" class="ouricon ouriconlast"></a>
                 </div>
             </div>
-                <div class="team-lead l1">
-                    <img loading="lazy" src="img/nikhil_sir.png" class="image image8">
-                    <hr>
-                    <h1 class="name">DR. NIKHIL MARRIWALA</h1>
-                    <h2 class="name name1">CONVENER</h2>
-                    <hr>
-                    <div class="ourteam">
-                    The Training and Placement department helps students get jobs at big businesses by working with their academic departments.
-                    We are thankful that many organizations trust us and hope we can continue working together in a good way.
+            <div class="team-lead l1">
+                <img loading="lazy" src="img/nikhil_sir.png" class="image image8">
+                <hr>
+                <h1 class="name">DR. NIKHIL MARRIWALA</h1>
+                <h2 class="name name1">CONVENER</h2>
+                <hr>
+                <div class="ourteam">
+                    The Training and Placement department helps students get jobs at big businesses by working with
+                    their academic departments.
+                    We are thankful that many organizations trust us and hope we can continue working together in a good
+                    way.
                 </div>
                 <hr>
                 <div class="ourlogo">
                     <a href="https://www.linkedin.com/in/dr-nikhil-kumar-marriwala-4a9b8796" class="ourdiv">
-                    <img src="img/linkedin.png" alt="" class="ouricon"></a>
+                        <img src="img/linkedin.png" alt="" class="ouricon"></a>
                     <a href="mailto:nmarriwala@kuk.ac.in" class="ourdiv">
                         <img src="img/email.png" alt="" class="ouricon ouriconlast"></a>
                 </div>
+            </div>
+            <div class="team-lead l2">
+                <img loading="lazy" src="img/DSC_0409.jpg" class="image">
+                <hr>
+                <h1 class="name">DR. SANJEEV AHUJA</h1>
+                <h2 class="name name1">CONVENER</h2>
+                <hr>
+                <div class="ourteam">
+                    The Dpt. of Training and Placement facilitates the placement of students in leading industrial
+                    enterprises. We express our gratitude to the
+                    respective organizations for their trust and confidence in our services, and look forward to
+                    fostering a strong relationship with them.
                 </div>
-                <div class="team-lead l2">
-                    <img loading="lazy" src="img/DSC_0409.jpg" class="image">  
-                    <hr>
-                    <h1 class="name">DR. SANJEEV AHUJA</h1>
-                    <h2 class="name name1">CONVENER</h2>
-                    <hr>
-                    <div class="ourteam">
-                    The Dpt. of Training and Placement facilitates the placement of students in leading industrial enterprises. We express our gratitude to the
-                     respective organizations for their trust and confidence in our services, and look forward to fostering a strong relationship with them.
-                    </div>
-                    <hr>
+                <hr>
                 <div class="ourlogo">
                     <a href="https://www.linkedin.com/in/sanjeev-ahuja-486793111" class="ourdiv">
-                    <img src="img/linkedin.png" alt="" class="ouricon"></a>
+                        <img src="img/linkedin.png" alt="" class="ouricon"></a>
                     <a href="mailto:sahuja2015@kuk.ac.in" class="ourdiv">
                         <img src="img/email.png" alt="" class="ouricon ouriconlast"></a>
-                </div>                 
                 </div>
             </div>
         </div>
-            <h2 class="heading-primary--main white-head6">Teacher Coordinators</h2>
+    </div>
+    <h2 class="heading-primary--main white-head6" id="co">Teacher Coordinators</h2>
+    <div class="teacher-main">
+        <div class="teacher">
+            <img loading="lazy" src="img/Saumya-mam-768x1024.jpg" class="photo">
+            <div class="name tcname">Mrs. Saumya Goyal</div>
+            <div class="name1 tcdep">Dept. of Computer Engg.</div>
+            <a href="mailto:goyalsaumya4@gmail.com" class="ourdiv">
+                <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/shikha_cse.jpg" class="photo">
+            <div class="name tcname">Ms. Shikha Chaudhry</div>
+            <div class="name1 tcdep">Dept. of Computer Engg.</div>
+            <a href="mailto:shikhachaudhry107@gmail.com" class="ourdiv">
+                <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/krishan.jpg" class="photo">
+            <div class="name tcname">Mr. Krishan Gopal</div>
+            <div class="name1 tcdep">Dept. of Electronics & Communications</div>
+            <a href="mailto:kgopal2015@kuk.ac.in" class="ourdiv">
+                <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/Vikaskumar.jpg" class="photo">
+            <div class="name tcname">Mr. Vikas kumar</div>
+            <div class="name1 tcdep">Dept. of Mechanical Engg.</div>
+            <a href="mailto:nirmaldhotia@gmail.com" class="ourdiv">
+                <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/sunita new.jpg" class="photo">
+            <div class="name tcname">Dr. Sunita Khatak</div>
+            <div class="name1 tcdep">Dept. of Biotechnology</div>
+            <a href="mailto:skhatak2015@kuk.ac.in" class="ourdiv">
+                <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/no-profile-male-img-1.png" class="photo def">
+            <div class="name tcname">Mr. Archit Sharma</div>
+            <div class="name1 tcdep">Dept. of Biotechnology</div>
+            <a href="mailto:archit.sharma786@gmail.com" class="ourdiv">
+                <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+    </div>
+    <div class="cropper-sub2">
+        <h2 class="heading-primary--main white-head7">Student Coordinators</h2>
+        <div class="teacher-main">
+            <div class="teacher">
+                <img loading="lazy" src="img/jhalak-agarwal.jpg" class="photo">
+                <div class="name">Jhalak Agarwal</div>
+            </div>
+            <div class="teacher">
+                <img loading="lazy" src="img/radhika.jpg" class="photo">
+                <div class="name">Radhika</div>
+            </div>
+            <div class="teacher">
+                <img loading="lazy" src="img/sonu-yadav.jpeg" class="photo">
+                <div class="name">Sonu Yadav</div>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <h3>Contact Us</h3>
+        <div>TRAINING AND PLACEMENT CELL,1ST FLOOR,UNIVERSITY INSTITUTE OF ENGINEERING & TECHNOLOGY KURUKSHETRA
+            UNIVERSITY,KURUKSHETRA, HARYANA</div>
+        Mobile No : 9729999805 , 9350263755 Office : 01744-238967
+        <div class="copy-right"><b>Copyright © 2023 T&P Cell U.I.E.T KUK, Kurukshetra</b></div>
+    </div>
     <script type=text/javascript src=data/bt18.js></script>
     <script src=js/myscripts.js></script>
     <script src=js/myscripts2.js></script>
