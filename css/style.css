@@ -1398,7 +1398,7 @@ body {
       margin: 0 auto;
   }
   
-  .row {
+  .row:not(:last-child) {
       display: flex;
       justify-content: space-between;
       margin: 0 -10px;
