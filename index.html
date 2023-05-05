@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 
 <head>
     <meta charset=UTF-8>
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet>
     <link rel=stylesheet href=css/style.css>
+    <link rel=stylesheet href=css/stylen.css>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="shortcut icon" type=image/png href=img/UIETbackground.png>
     <script src=https://www.gstatic.com/charts/loader.js></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <title>T&P Cell ,UIET KUK</title>
 </head>
 
@@ -21,27 +24,17 @@
         </label>
 
         <div class="navigation__background">&nbsp;</div>
-        <script>
-            function check() {
-                let inputs = document.getElementById('navi-toggle');
-                inputs.checked = true;
-            }
-            function uncheck() {
-                let inputs = document.getElementById('navi-toggle');
-                inputs.checked = false;
-            }
-            window.onload = function () {
-                window.addEventListener('load', check, false);
-            }
-        </script>
+
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#notice" class="navigation__link" onclick="uncheck()">Notice
                         Board</a></li>
                 <li class="navigation__item"><a href="#placement" class="navigation__link"
                         onclick="uncheck()">Placements</a></li>
-                <li class="navigation__item"><a href="#at" class="navigation__link" onclick="uncheck()">About Us</a></li>
-                <li class="navigation__item"><a href="#ot" class="navigation__link" onclick="uncheck()">Our Team</a></li>
+                <li class="navigation__item"><a href="#at" class="navigation__link" onclick="uncheck()">About Us</a>
+                </li>
+                <li class="navigation__item"><a href="#ot" class="navigation__link" onclick="uncheck()">Our Team</a>
+                </li>
                 <li class="navigation__item"><a href="#co" class="navigation__link" onclick="uncheck()">Coordinators</a>
                 </li>
                 <li class="navigation__item"><a href="#cu" class="navigation__link" onclick="uncheck()">Contact Us</a>
@@ -52,7 +45,8 @@
     <header class=header>
         <div class=bg-video>
             <div class=bg-video__content>
-                <iframe src=img/dist/index1.html class=full-width seamless=seamless scrolling=no></iframe>
+                <!-- <iframe src=img/dist/index1.html class=full-width seamless=seamless scrolling=no></iframe> -->
+                <div id="particles-js1"></div>
             </div>
             <div class=header__logo-box>
                 <img src=img/UIETblack.png alt=Logo class=header__logo href=#>
@@ -66,7 +60,7 @@
                 <br>
                 <span class=heading-primary--sub>A constructive block of </span><span class=heading-primary--sub2>UIET,
                     KUK</span>
-                
+
         </div>
     </header>
     <br>
@@ -92,15 +86,25 @@
             <span class=dots onclick=currentSlide(2)></span>
         </div>
     </div>
-    
+
     <br>
     <div class=cropper>
         <h2 class="heading-primary--main white-head1" id="notice">Notice Board</h2>
         <br>
-        <div class=alert>
+        <div class="alert">
             <br>
             <br>
-            <iframe src=notice/notice.html class=notice-board seamless=seamless scrolling=no></iframe>
+            <!-- <iframe src=notice/notice.html class=notice-board seamless=seamless scrolling=no></iframe> -->
+                <div class="noticeBody notice-board">
+                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="Up" scrollamount="2"
+                        scrolldelay="1">
+                        <hr>
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                            class="nt">Selected Student for Intership</a>
+                        <hr>
+                    </marquee>
+                </div>
         </div>
     </div>
     <h2 class="heading-primary--main white-head2" id="placement">Placements Info</h2>
@@ -177,7 +181,7 @@
                 <h2 class="heading-primary--sub white-headf">BT Placement 2018</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-bt18 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -189,7 +193,7 @@
                 <h2 class="heading-primary--sub white-headf">ME Placement 2018</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-me18 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -201,7 +205,7 @@
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2018</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-ec18 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -213,7 +217,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2018</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-cs18 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -225,7 +229,7 @@
                 <h2 class="heading-primary--sub white-headf">BT Placement 2019</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-bt19 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -237,7 +241,7 @@
                 <h2 class="heading-primary--sub white-headf">ME Placement 2019</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-me19 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -249,7 +253,7 @@
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2019</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-ec19 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -261,7 +265,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2019</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-cs19 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -273,7 +277,7 @@
                 <h2 class="heading-primary--sub white-headf">BT Placement 2020</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-bt20 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -285,7 +289,7 @@
                 <h2 class="heading-primary--sub white-headf">BT Placement 2021</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-bt21 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -297,7 +301,7 @@
                 <h2 class="heading-primary--sub white-headf">BT Placement 2022</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-bt22 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -309,7 +313,7 @@
                 <h2 class="heading-primary--sub white-headf">BT Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-bt23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -321,7 +325,7 @@
                 <h2 class="heading-primary--sub white-headf">ME Placement 2020</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-me20 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -333,8 +337,8 @@
                 <h2 class="heading-primary--sub white-headf">ME Placement 2021</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
-                        
+
+
                         <div id=ne-food-chart-me21 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -346,7 +350,7 @@
                 <h2 class="heading-primary--sub white-headf">ME Placement 2022</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-me22 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -358,7 +362,7 @@
                 <h2 class="heading-primary--sub white-headf">ME Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-me23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -370,7 +374,7 @@
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2020</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-ec20 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -382,7 +386,7 @@
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2021</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-ec21 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -394,7 +398,7 @@
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2022</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-ec22 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -406,7 +410,7 @@
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-ec23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -418,7 +422,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2019</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-cs19 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -430,7 +434,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2020</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-cs20 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -442,7 +446,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2021</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-cs21 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -454,7 +458,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2022</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
+
                         <div id=ne-food-chart-cs22 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -466,7 +470,7 @@
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                        
+
                         <div id=ne-food-chart-cs23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
@@ -677,59 +681,76 @@
                 <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
         </div>
     </div>
-        <h2 class="heading-primary--main white-head7">Student Coordinators</h2>
-        <div class="teacher-main">
-            <div class="teacher">
-                <img loading="lazy" src="img/jhalak-agarwal.jpg" class="photo">
-                <div class="name">Jhalak Agarwal</div>
-            </div>
-            <div class="teacher">
-                <img loading="lazy" src="img/radhika.jpg" class="photo">
-                <div class="name">Radhika</div>
-            </div>
-            <div class="teacher">
-                <img loading="lazy" src="img/sonu-yadav.jpeg" class="photo">
-                <div class="name">Sonu Yadav</div>
-            </div>
+    <h2 class="heading-primary--main white-head7">Student Coordinators</h2>
+    <div class="teacher-main">
+        <div class="teacher">
+            <img loading="lazy" src="img/jhalak-agarwal.jpg" class="photo">
+            <div class="name">Jhalak Agarwal</div>
         </div>
-<footer class="footer">
-    <div class="bg-footer">
-        <div class=bg-footer__content>
-            <iframe src=img/dist/index1.html class=full-width-footer seamless=seamless scrolling=no></iframe>
+        <div class="teacher">
+            <img loading="lazy" src="img/radhika.jpg" class="photo">
+            <div class="name">Radhika</div>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/sonu-yadav.jpeg" class="photo">
+            <div class="name">Sonu Yadav</div>
         </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="leftAddress">
-          <h5 class="foot-title" id="cu">Contact Us</h5>
-          <br><br>
-          <div><i class="fa fa-map-marker" ></i><span> 1ST FLOOR, T&P CELL, UIET KUK</span></div><br>
-          <div><i class="fa fa-phone" ></i> <a href="tel:9729999805"> 97299 99805 ,</a><a href="tel:9350263755"> 9350263755 </a></div>
-          <div><i class="fa fa-phone" ></i> <a href="tel:01744-238967">01744-238967</a></div>
-          <br>
-          <div><i class="fa fa-envelope"></i> <a href="mailto:tpouiet@kuk.ac.in">Mail Us</a></div>
+    <footer class="footer">
+        <div class="bg-footer">
+            <div class="bg-footer__content bg-video__content">
+                <!-- <iframe src=img/dist/index1.html class=full-width-footer seamless=seamless scrolling=no></iframe> -->
+                <div id="particles-js"></div>
+            </div>
         </div>
-        <div class="rightHandles" style="text-align: center;">
-          <h5 class="foot-title">Follow Us</h5>
-          <br><br>
-          <ul class="social-media">
-            <li><a href="https://www.facebook.com/tnp.uietkuk/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com/school/uietkurukshetra/"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
+        <div class="container">
+            <div class="row">
+                <div class="leftAddress">
+                    <h5 class="foot-title" id="cu">Contact Us</h5>
+                    <br><br>
+                    <div><i class="fa fa-map-marker"></i><span> 1ST FLOOR, T&P CELL, UIET KUK</span></div><br>
+                    <div><i class="fa fa-phone"></i> <a href="tel:9729999805"> 97299 99805 ,</a><a
+                            href="tel:9350263755"> 9350263755 </a></div>
+                    <div><i class="fa fa-phone"></i> <a href="tel:01744-238967">01744-238967</a></div>
+                    <br>
+                    <div><i class="fa fa-envelope"></i> <a href="mailto:tpouiet@kuk.ac.in">Mail Us</a></div>
+                </div>
+                <div class="rightHandles" style="text-align: center;">
+                    <h5 class="foot-title">Follow Us</h5>
+                    <br><br>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/tnp.uietkuk/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/school/uietkurukshetra/"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <div class="row rowl">
+                <div class="copyright">
+                    <p class="footer-text"> Copyright &copy; 2023 T&P Cell U.I.E.T KUK, Kurukshetra </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <br><br>
-      <div class="row rowl">
-        <div class="copyright">
-          <p class="footer-text"> Copyright &copy; 2023 T&P Cell U.I.E.T KUK, Kurukshetra </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <script>
+        function check() {
+            let inputs = document.getElementById('navi-toggle');
+            inputs.checked = true;
+        }
+        function uncheck() {
+            let inputs = document.getElementById('navi-toggle');
+            inputs.checked = false;
+        }
+        window.onload = function () {
+            window.addEventListener('load', check, false);
+        }
+    </script>
     <script type=text/javascript src=data/bt18.js></script>
     <script src=js/myscripts.js></script>
     <script src=js/myscripts2.js></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

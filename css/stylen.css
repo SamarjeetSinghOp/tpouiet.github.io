@@ -1,25 +1,36 @@
 .nt {
-    margin: 1rem; 
+    margin: 16px;
     color: #a6720b;
-    padding: 0.2rem;
+    padding: 0.2em;
     text-decoration: none;
     font-size: 22px;
-
+}
+marquee{  
+    height: 60px;
+}
+hr{
+    margin: 8px 0;
 }
 
 @media only screen and (max-width: 500px) {
-.nt{
-    font-size: 18px;
+    .nt {
+        font-size: 18px;
+    }
+
+    .new {
+        font-size: 7px !important;
+        margin-left: 4px;
+    }
+
+    .noticeBody {
+        padding-right: 0.4em;
+        padding-left: 0.4em;
+    }
 }
-.new {
-    font-size: 7px !important;
-    margin-left: 4px;}
 
-    .body {
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;} }
-
-.body {
+.noticeBody {
+    height: 134px;
+    overflow: hidden;
     background-color: white;
 }
 
@@ -34,11 +45,11 @@
     display: inline-block;
     margin: 0px;
     margin-left: 10px;
-	animation: color_change 1s infinite alternate;
+    animation: color_change 1s infinite alternate;
 }
 
 @keyframes color_change {
-	0% {
+    0% {
         color: #a6720b;
     }
 
