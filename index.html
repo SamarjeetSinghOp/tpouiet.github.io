@@ -95,16 +95,16 @@
             <br>
             <br>
             <!-- <iframe src=notice/notice.html class=notice-board seamless=seamless scrolling=no></iframe> -->
-                <div class="noticeBody notice-board">
-                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="Up" scrollamount="2"
-                        scrolldelay="1">
-                        <hr>
-                        <a target="_blank"
-                            href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
-                            class="nt">Selected Student for Intership</a>
-                        <hr>
-                    </marquee>
-                </div>
+            <div class="noticeBody notice-board">
+                <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="Up" scrollamount="2"
+                    scrolldelay="1">
+                    <hr>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt">Selected Student for Intership</a>
+                    <hr>
+                </marquee>
+            </div>
         </div>
     </div>
     <h2 class="heading-primary--main white-head2" id="placement">Placements Info</h2>
@@ -733,6 +733,11 @@
             </div>
         </div>
     </footer>
+
+    <div class="loader">
+        <i class="fa fa-spinner fa-spin">
+    </div>
+
     <script>
         function check() {
             let inputs = document.getElementById('navi-toggle');
@@ -742,9 +747,13 @@
             let inputs = document.getElementById('navi-toggle');
             inputs.checked = false;
         }
-        window.onload = function () {
-            window.addEventListener('load', check, false);
-        }
+        // window.onload = function () {
+        //     window.addEventListener('load', check, false);
+        // }
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader');
+            loader.style.display = 'none';
+        });
     </script>
     <script type=text/javascript src=data/bt18.js></script>
     <script src=js/myscripts.js></script>
