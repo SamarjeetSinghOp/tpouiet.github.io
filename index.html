@@ -94,7 +94,6 @@
         <div class="alert">
             <br>
             <br>
-            <!-- <iframe src=notice/notice.html class=notice-board seamless=seamless scrolling=no></iframe> -->
             <div class="noticeBody notice-board">
                 <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="Up" scrollamount="2"
                     scrolldelay="1">
@@ -698,7 +697,7 @@
     </footer>
 
     <div class="loader">
-        <i class="fa fa-spinner fa-spin">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw">
     </div>
 
     <script>
@@ -710,9 +709,6 @@
             let inputs = document.getElementById('navi-toggle');
             inputs.checked = false;
         }
-        // window.onload = function () {
-        //     window.addEventListener('load', check, false);
-        // }
         window.addEventListener('load', () => {
             const loader = document.querySelector('.loader');
             loader.style.display = 'none';
