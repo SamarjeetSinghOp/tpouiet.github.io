@@ -868,9 +868,33 @@ body {
   transform: translateX(1rem);
 }
 
-.navigation__checkbox:checked~.navigation__background {
-  transform: scale(100);
+
+@media screen and (max-width: 500px) {
+  .navigation__checkbox:checked~ .navigation__background {
+    transform: scale(20);
+  }
 }
+
+@media screen and (max-width: 800px) {
+  .navigation__checkbox:checked~ .navigation__background {
+    transform: scale(40);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .navigation__checkbox:checked~ .navigation__background {
+    transform: scale(80);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation__checkbox:checked~ .navigation__background {
+    transform: scale(120);
+  }
+}
+
+
+
 
 .navigation__checkbox:checked~.navigation__nav {
   opacity: 1;
