@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 
 <head>
     <meta charset=UTF-8>
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet>
     <link rel=stylesheet href=css/style.css>
+    <link rel=stylesheet href=css/stylen.css>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="shortcut icon" type=image/png href=img/UIETbackground.png>
-    <script src=https://www.gstatic.com/charts/loader.js></script>
+    <script defer src=https://www.gstatic.com/charts/loader.js></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <title>T&P Cell ,UIET KUK</title>
 </head>
 
@@ -21,27 +24,17 @@
         </label>
 
         <div class="navigation__background">&nbsp;</div>
-        <script>
-            function check() {
-                let inputs = document.getElementById('navi-toggle');
-                inputs.checked = true;
-            }
-            function uncheck() {
-                let inputs = document.getElementById('navi-toggle');
-                inputs.checked = false;
-            }
-            window.onload = function () {
-                window.addEventListener('load', check, false);
-            }
-        </script>
+
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#notice" class="navigation__link" onclick="uncheck()">Notice
                         Board</a></li>
                 <li class="navigation__item"><a href="#placement" class="navigation__link"
                         onclick="uncheck()">Placements</a></li>
-                <li class="navigation__item"><a href="#at" class="navigation__link" onclick="uncheck()">About Us</a></li>
-                <li class="navigation__item"><a href="#ot" class="navigation__link" onclick="uncheck()">Our Team</a></li>
+                <li class="navigation__item"><a href="#at" class="navigation__link" onclick="uncheck()">About Us</a>
+                </li>
+                <li class="navigation__item"><a href="#ot" class="navigation__link" onclick="uncheck()">Our Team</a>
+                </li>
                 <li class="navigation__item"><a href="#co" class="navigation__link" onclick="uncheck()">Coordinators</a>
                 </li>
                 <li class="navigation__item"><a href="#cu" class="navigation__link" onclick="uncheck()">Contact Us</a>
@@ -49,10 +42,11 @@
             </ul>
         </nav>
     </div>
-    <header class=header>
+    <header class="header">
         <div class=bg-video>
             <div class=bg-video__content>
-                <iframe src=img/dist/index1.html class=full-width seamless=seamless scrolling=no></iframe>
+                <!-- <iframe src=img/dist/index1.html class=full-width seamless=seamless scrolling=no></iframe> -->
+                <div id="particles-js1"></div>
             </div>
             <div class=header__logo-box>
                 <img src=img/UIETblack.png alt=Logo class=header__logo href=#>
@@ -66,7 +60,7 @@
                 <br>
                 <span class=heading-primary--sub>A constructive block of </span><span class=heading-primary--sub2>UIET,
                     KUK</span>
-                
+
         </div>
     </header>
     <br>
@@ -76,7 +70,7 @@
     <h2 class="heading-primary--main white-head">Our Cell at a Glance</h2>
     <br>
     <br>
-    <div class=carousel-container id=22>
+    <section class=carousel-container id='corousel'>
         <div class="mySlides animate">
             <img src=img/p1.jpg alt=slide>
             <div class=text>Our Students Selected in Vivo Mobile</div>
@@ -91,390 +85,363 @@
             <span class=dots onclick=currentSlide(1)></span>
             <span class=dots onclick=currentSlide(2)></span>
         </div>
-    </div>
-    
+    </section>
+
     <br>
-    <div class=cropper>
+    <section  class="cropper animate-me">
         <h2 class="heading-primary--main white-head1" id="notice">Notice Board</h2>
         <br>
-        <div class=alert>
+        <div class="alert">
             <br>
             <br>
-            <iframe src=notice/notice.html class=notice-board seamless=seamless scrolling=no></iframe>
+            <!-- <iframe src=notice/notice.html class=notice-board seamless=seamless scrolling=no></iframe> -->
+            <div class="noticeBody notice-board">
+                <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="Up" scrollamount="2"
+                    scrolldelay="1">
+                    <hr>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt">Selected Student for Intership</a>
+                    <hr>
+                </marquee>
+            </div>
         </div>
-    </div>
+    </section>
     <h2 class="heading-primary--main white-head2" id="placement">Placements Info</h2>
-    <div class=content>
-        <div class=card href=#!>
-            <div class=front style=background-image:url(img/cardbg.jpg)>
-                <p>2023</p>
-            </div>
-            <div class=back style=background-image:url(img/cardbg.jpg)>
-                <a href=#cs23 class=button>CSE</a>
-                <a href=#ec23 class=button>ECE</a>
-                <a href=#me23 class=button>ME</a>
-                <a href=#bt23 class=button>BIO-TECH</a>
-            </div>
-        </div>
-        <div class=card href=#!>
-            <div class=front style=background-image:url(img/cardbg.jpg)>
-                <p>2022</p>
-            </div>
-            <div class=back style=background-image:url(img/cardbg.jpg)>
-                <a href=#cs22 class=button>CSE</a>
-                <a href=#ec22 class=button>ECE</a>
-                <a href=#me22 class=button>ME</a>
-                <a href=#bt22 class=button>BIO-TECH</a>
-            </div>
-        </div>
-        <div class=card href=#!>
-            <div class=front style=background-image:url(img/cardbg.jpg)>
-                <p>2021</p>
-            </div>
-            <div class=back style=background-image:url(img/cardbg.jpg)>
-                <a href=#cs21 class=button>CSE</a>
-                <a href=#ec21 class=button>ECE</a>
-                <a href=#me21 class=button>ME</a>
-                <a href=#bt21 class=button>BIO-TECH</a>
-            </div>
-        </div>
-        <div class=card href=#!>
-            <div class=front style=background-image:url(img/cardbg.jpg)>
-                <p>2020</p>
-            </div>
-            <div class=back style=background-image:url(img/cardbg.jpg)>
-                <a href=#cs20 class=button>CSE</a>
-                <a href=#ec20 class=button>ECE</a>
-                <a href=#me20 class=button>ME</a>
-                <a href=#bt20 class=button>BIO-TECH</a>
-            </div>
-        </div>
-        <div class=card href=#!>
-            <div class=front style=background-image:url(img/cardbg.jpg)>
-                <p>2019</p>
-            </div>
-            <div class=back style=background-image:url(img/cardbg.jpg)>
-                <a href=#cs19 class=button>CSE</a>
-                <a href=#ec19 class=button>ECE</a>
-                <a href=#me19 class=button>ME</a>
-                <a href=#bt19 class=button>BIO-TECH</a>
-            </div>
-        </div>
-        <div class=card href=#!>
-            <div class=front style=background-image:url(img/cardbg.jpg)>
-                <p>2018</p>
-            </div>
-            <div class=back style=background-image:url(img/cardbg.jpg)>
-                <a href=#cs18 class=button>CSE</a>
-                <a href=#ec18 class=button>ECE</a>
-                <a href=#me18 class=button>ME</a>
-                <a href=#bt18 class="button bt2018">BIO-TECH</a>
-            </div>
-        </div>
-        <div class=popup role=alert id=bt18>
+    <section class="content animate-me">
+        <div class=popup role=alert id=cs23>
             <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">BT Placement 2018</h2>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-bt18 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=me18>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ME Placement 2018</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-me18 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=ec18>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ECE Placement 2018</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-ec18 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=cs18>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">CSE Placement 2018</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-cs18 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=bt19>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">BT Placement 2019</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-bt19 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=me19>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ME Placement 2019</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-me19 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=ec19>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ECE Placement 2019</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-ec19 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=cs19>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">CSE Placement 2019</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-cs19 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=bt20>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">BT Placement 2020</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-bt20 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=bt21>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">BT Placement 2021</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-bt21 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=bt22>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">BT Placement 2022</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-bt22 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=bt23>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">BT Placement 2023</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-bt23 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=me20>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ME Placement 2020</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-me20 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=me21>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ME Placement 2021</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        
-                        <div id=ne-food-chart-me21 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=me22>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ME Placement 2022</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-me22 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=me23>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ME Placement 2023</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-me23 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=ec20>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ECE Placement 2020</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-ec20 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=ec21>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ECE Placement 2021</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-ec21 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=ec22>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">ECE Placement 2022</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-ec22 class=ne-nutrition-distribution__chart></div>
+                        <div id=ne-food-chart-cs23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class=popup role=alert id=ec23>
             <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
+                <div class="popup-close img-replace">Close</div>
                 <h2 class="heading-primary--sub white-headf">ECE Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
                         <div id=ne-food-chart-ec23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class=popup role=alert id=cs19>
+        <div class=popup role=alert id=me23>
             <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">CSE Placement 2019</h2>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-cs19 class=ne-nutrition-distribution__chart></div>
+                        <div id=ne-food-chart-me23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class=popup role=alert id=cs20>
+        <div class=popup role=alert id=bt23>
             <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">CSE Placement 2020</h2>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2023</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-cs20 class=ne-nutrition-distribution__chart></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=popup role=alert id=cs21>
-            <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">CSE Placement 2021</h2>
-                <div class=col>
-                    <div class=ne-nutrition-distribution>
-                         
-                        <div id=ne-food-chart-cs21 class=ne-nutrition-distribution__chart></div>
+                        <div id=ne-food-chart-bt23 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class=popup role=alert id=cs22>
             <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
+                <div class="popup-close img-replace">Close</div>
                 <h2 class="heading-primary--sub white-headf">CSE Placement 2022</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                         
                         <div id=ne-food-chart-cs22 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class=popup role=alert id=cs23>
+        <div class=popup role=alert id=ec22>
             <div class=popup-container>
-                <a href=#0 class="popup-close img-replace">Close</a>
-                <h2 class="heading-primary--sub white-headf">CSE Placement 2023</h2>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2022</h2>
                 <div class=col>
                     <div class=ne-nutrition-distribution>
-                        
-                        <div id=ne-food-chart-cs23 class=ne-nutrition-distribution__chart></div>
+                        <div id=ne-food-chart-ec22 class=ne-nutrition-distribution__chart></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class=popup role=alert id=me22>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2022</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me22 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt22>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2022</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt22 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2023</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2022</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2021</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2020</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2019</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2018</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class="button bt2018">BIO-TECH</div>
+            </div>
+        </div>
+    </section>
     <br>
-    <div class="cropper-sub">
+    <section class="cropper-sub animate-me">
         <h2 class="heading-primary--main white-head3" id="at">About Us</h2>
         <br>
         <div class="fcontainer">
@@ -508,9 +475,9 @@
                 Discussion & Interview Skills.
             </div>
         </div>
-    </div>
+    </section>
     <h2 class="heading-primary--main white-head8">Testimonials</h2>
-    <section class="testimonial-area">
+    <section class="testimonial-area animate-me">
         <div class="container">
             <div class="testimonial-content owl-carousel">
                 <div class="single-testimonial">
@@ -569,7 +536,7 @@
             </div>
         </div>
     </section>
-    <div class="cropper-sub2">
+    <section class="cropper-sub2 animate-me">
         <h2 class="heading-primary--main white-head3" id="ot">Our Team</h2>
         <div class="team-lead-main">
             <div class="team-lead l3">
@@ -631,7 +598,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <h2 class="heading-primary--main white-head6" id="co">Teacher Coordinators</h2>
     <div class="teacher-main">
         <div class="teacher">
@@ -677,59 +644,85 @@
                 <img src="img/email.png" alt="" class="ouricon tcdiv"></a>
         </div>
     </div>
-        <h2 class="heading-primary--main white-head7">Student Coordinators</h2>
-        <div class="teacher-main">
-            <div class="teacher">
-                <img loading="lazy" src="img/jhalak-agarwal.jpg" class="photo">
-                <div class="name">Jhalak Agarwal</div>
-            </div>
-            <div class="teacher">
-                <img loading="lazy" src="img/radhika.jpg" class="photo">
-                <div class="name">Radhika</div>
-            </div>
-            <div class="teacher">
-                <img loading="lazy" src="img/sonu-yadav.jpeg" class="photo">
-                <div class="name">Sonu Yadav</div>
-            </div>
+    <h2 class="heading-primary--main white-head7 ">Student Coordinators</h2>
+    <div class="teacher-main animate-me">
+        <div class="teacher">
+            <img loading="lazy" src="img/jhalak-agarwal.jpg" class="photo">
+            <div class="name">Jhalak Agarwal</div>
         </div>
-<footer class="footer">
-    <div class="bg-footer">
-        <div class=bg-footer__content>
-            <iframe src=img/dist/index1.html class=full-width-footer seamless=seamless scrolling=no></iframe>
+        <div class="teacher">
+            <img loading="lazy" src="img/radhika.jpg" class="photo">
+            <div class="name">Radhika</div>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/sonu-yadav.jpeg" class="photo">
+            <div class="name">Sonu Yadav</div>
         </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="leftAddress">
-          <h5 class="foot-title" id="cu">Contact Us</h5>
-          <br><br>
-          <div><i class="fa fa-map-marker" ></i><span> 1ST FLOOR, T&P CELL, UIET KUK</span></div><br>
-          <div><i class="fa fa-phone" ></i> <a href="tel:9729999805"> 97299 99805 ,</a><a href="tel:9350263755"> 9350263755 </a></div>
-          <div><i class="fa fa-phone" ></i> <a href="tel:01744-238967">01744-238967</a></div>
-          <br>
-          <div><i class="fa fa-envelope"></i> <a href="mailto:tpouiet@kuk.ac.in">Mail Us</a></div>
+    <footer class="footer animate-mer">
+        <div class="bg-footer">
+            <div class="bg-footer__content bg-video__content">
+                <!-- <iframe src=img/dist/index1.html class=full-width-footer seamless=seamless scrolling=no></iframe> -->
+                <div id="particles-js"></div>
+            </div>
         </div>
-        <div class="rightHandles" style="text-align: center;">
-          <h5 class="foot-title">Follow Us</h5>
-          <br><br>
-          <ul class="social-media">
-            <li><a href="https://www.facebook.com/tnp.uietkuk/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com/school/uietkurukshetra/"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
+        <div class="container">
+            <div class="row">
+                <div class="leftAddress">
+                    <h5 class="foot-title" id="cu">Contact Us</h5>
+                    <br><br>
+                    <div><i class="fa fa-map-marker"></i><span> 1ST FLOOR, T&P CELL, UIET KUK</span></div><br>
+                    <div><i class="fa fa-phone"></i> <a href="tel:9729999805"> 97299 99805 ,</a><a
+                            href="tel:9350263755"> 9350263755 </a></div>
+                    <div><i class="fa fa-phone"></i> <a href="tel:01744-238967">01744-238967</a></div>
+                    <br>
+                    <div><i class="fa fa-envelope"></i> <a href="mailto:tpouiet@kuk.ac.in">Mail Us</a></div>
+                </div>
+                <div class="rightHandles" style="text-align: center;">
+                    <h5 class="foot-title">Follow Us</h5>
+                    <br><br>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/tnp.uietkuk/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/school/uietkurukshetra/"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <div class="row rowl">
+                <div class="copyright">
+                    <p class="footer-text"> Copyright &copy; 2023 T&P Cell U.I.E.T KUK, Kurukshetra </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <br><br>
-      <div class="row rowl">
-        <div class="copyright">
-          <p class="footer-text"> Copyright &copy; 2023 T&P Cell U.I.E.T KUK, Kurukshetra </p>
-        </div>
-      </div>
+    </footer>
+
+    <div class="loader">
+        <i class="fa fa-spinner fa-spin">
     </div>
-  </footer>
-    <script type=text/javascript src=data/bt18.js></script>
-    <script src=js/myscripts.js></script>
-    <script src=js/myscripts2.js></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function check() {
+            let inputs = document.getElementById('navi-toggle');
+            inputs.checked = true;
+        }
+        function uncheck() {
+            let inputs = document.getElementById('navi-toggle');
+            inputs.checked = false;
+        }
+        // window.onload = function () {
+        //     window.addEventListener('load', check, false);
+        // }
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader');
+            loader.style.display = 'none';
+        });
+    </script>
+    <script defer type=text/javascript src=data/bt18.js></script>
+    <script defer src=js/myscripts.js></script>
+    <script defer src=js/myscripts2.js></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
