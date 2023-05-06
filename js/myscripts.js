@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Welcome to", "आपका स्वागत है", "ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ", "स्वागतम् अस्ति"];
+const textArray = ["स्वागतम् अस्ति", "आपका स्वागत है", "ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ", "Welcome to"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000;
