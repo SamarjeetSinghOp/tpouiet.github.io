@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const buttons = document.querySelectorAll('.button');
 const popups = document.querySelectorAll('.popup');
 const closebtn = document.querySelectorAll('.popup-close');
+const popupContainer = document.querySelector('.popup-container');
+
 for (let i = 0; i < buttons.length; i++) {
   const button = buttons[i];
   const popup = popups[i];
@@ -52,5 +54,12 @@ for (let i = 0; i < buttons.length; i++) {
   });
   close.addEventListener('click', () => {
     popup.classList.remove('is-visible');
+  });
+  popup.addEventListener('click', (event) => {
+    if (popup.classList.contains('is-visible')) {
+      if (!popupContainer.contains(event.target)) {
+        popup.classList.remove('is-visible');
+      }
+    }
   });
 }    
