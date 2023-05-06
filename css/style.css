@@ -465,12 +465,13 @@ body {
   }
 }
 
-.is-visible .popup-container {
+/* .is-visible .popup-container {
   transform: translateY(0);
   transition: 500ms all;
-}
+} */
 
 .popup-container .popup-close {
+  cursor: pointer;
   position: absolute;
   top: 8px;
   font-size: 0;
