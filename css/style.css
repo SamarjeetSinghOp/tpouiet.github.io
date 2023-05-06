@@ -1868,11 +1868,9 @@ svg>g>g.google-visualization-tooltip {
 
 .animate-me {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.5s ease;
+  transition: opacity 2000ms ease;
 }
 
-.animate {
+.animated {
   opacity: 1;
-  transform: none;
 }

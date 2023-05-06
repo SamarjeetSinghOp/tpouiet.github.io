@@ -69,10 +69,10 @@ const sections = document.querySelectorAll('.animate-me');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('animate');
+      entry.target.classList.add('animated');
     }
     else {
-      entry.target.classList.remove('animate');
+      entry.target.classList.remove('animated');
     }
   });
 });
