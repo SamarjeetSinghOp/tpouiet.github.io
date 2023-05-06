@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const buttons = document.querySelectorAll('.button');
 const popups = document.querySelectorAll('.popup');
 const closebtn = document.querySelectorAll('.popup-close');
-const popupContainer = document.querySelector('.popup-container');
+const popupContainer = document.querySelectorAll('.popup-container');
 
 for (let i = 0; i < buttons.length; i++) {
   const button = buttons[i];
@@ -57,9 +57,26 @@ for (let i = 0; i < buttons.length; i++) {
   });
   popup.addEventListener('click', (event) => {
     if (popup.classList.contains('is-visible')) {
-      if (!popupContainer.contains(event.target)) {
+      if (!popupContainer[i].contains(event.target)) {
         popup.classList.remove('is-visible');
       }
     }
   });
 }    
+
+
+const sections = document.querySelectorAll('.animate-me');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    }
+    else {
+      entry.target.classList.remove('animate');
+    }
+  });
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});

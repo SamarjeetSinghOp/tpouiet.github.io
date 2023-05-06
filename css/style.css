@@ -1046,7 +1046,7 @@ body {
 
 .test-info {
   display: flex;
-  column-gap:2rem;
+  column-gap: 2rem;
   align-items: center;
   justify-content: center;
   text-align: left;
@@ -1847,17 +1847,32 @@ span {
 
 
 /* glitch fix pie chart */
-  @media only screen and (max-width: 47.9em) {
-    .row {
-      justify-content: center;
-      border-bottom: 2px solid #000;
-      padding-bottom: 2.4rem;
-    }
-    .leftAddress {
-      text-align: center;
-      padding-bottom: 2.4rem;
-      border-bottom: 2px solid #000;
-    }
-     }
-     /* glitch fix pie chart */
-svg > g > g.google-visualization-tooltip { pointer-events: none }
+@media only screen and (max-width: 47.9em) {
+  .row {
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2.4rem;
+  }
+
+  .leftAddress {
+    text-align: center;
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #000;
+  }
+}
+
+/* glitch fix pie chart */
+svg>g>g.google-visualization-tooltip {
+  pointer-events: none
+}
+
+.animate-me {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
+.animate {
+  opacity: 1;
+  transform: none;
+}
