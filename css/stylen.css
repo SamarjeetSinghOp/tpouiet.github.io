@@ -6,7 +6,7 @@
     font-size: 22px;
 }
 marquee{  
-    height: 60px;
+    height: auto;
 }
 hr{
     margin: 8px 0;
