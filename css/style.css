@@ -818,7 +818,7 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  left: -100%;
   z-index: 1500;
   opacity: 0;
   width: 0;
@@ -875,6 +875,7 @@ body {
 .navigation__checkbox:checked~.navigation__nav {
   opacity: 1;
   width: 100%;
+  left: 0;
 }
 
 .navigation__icon {
@@ -1943,3 +1944,4 @@ hr{
   margin-left: 10px;
   animation: color_change 1s infinite alternate;
 }
+
