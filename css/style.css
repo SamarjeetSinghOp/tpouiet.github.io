@@ -612,7 +612,7 @@ body {
 .fitem {
   background-image: linear-gradient(to bottom, rgba(241, 241, 241, 0.511) 0%, rgba(249, 255, 249, 0.498) 100%), url(../img/cardbg2.jpg);
   height: 32rem;
-  font-size: 1.7rem;
+  font-size: 2.0rem;
   width: 35rem;
   padding: 2rem;
   margin: 3rem;
@@ -1016,7 +1016,7 @@ body {
 
 .single-testimonial p {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   line-height: 2.4rem;
   padding: 5rem;
   padding-bottom: 3rem;
