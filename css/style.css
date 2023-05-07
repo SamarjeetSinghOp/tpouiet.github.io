@@ -868,6 +868,9 @@ body {
   transform: translateX(1rem);
 }
 
+.navigation__checkbox:checked~ .navigation__background {
+  transform: scale(120);
+}
 
 @media screen and (max-width: 500px) {
   .navigation__checkbox:checked~ .navigation__background {
@@ -892,9 +895,6 @@ body {
     transform: scale(120);
   }
 }
-
-
-
 
 .navigation__checkbox:checked~.navigation__nav {
   opacity: 1;
@@ -1969,3 +1969,7 @@ hr{
   animation: color_change 1s infinite alternate;
 }
 
+.dashed-hr {
+  border: none;
+  border-bottom: dashed 1px #000000;
+}
