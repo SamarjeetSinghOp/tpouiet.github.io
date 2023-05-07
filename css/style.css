@@ -797,7 +797,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#d59b25, #946300);
   z-index: 1000;
-  transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1.5s cubic-bezier(0.86, 0, 0.07, 1);
   will-change: transform;
 }
 
