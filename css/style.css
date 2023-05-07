@@ -1973,3 +1973,9 @@ hr{
   border: none;
   border-bottom: dashed 1px #000000;
 }
+
+.social-media li {
+  border: 1px dashed #000;
+  padding: 1rem;
+}
+
