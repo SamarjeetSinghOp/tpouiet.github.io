@@ -616,7 +616,7 @@ body {
   width: 35rem;
   padding: 2rem;
   margin: 3rem;
-  text-align: justify;
+  text-align: center;
   box-shadow: 0 0 25px -3px #000000;
   text-shadow: 1px 1px #ffffff;
   transition: 500ms;
@@ -1960,14 +1960,6 @@ hr{
 .nt:active {
   color: #ffffff;
   background-color: #a6720b;
-}
-
-.new {
-  font-size: 16px;
-  display: inline-block;
-  margin: 0px;
-  margin-left: 10px;
-  animation: color_change 1s infinite alternate;
 }
 
 .dashed-hr {
