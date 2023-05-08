@@ -1561,7 +1561,7 @@ body {
   overflow: hidden;
   margin-top: 10rem;
   margin-bottom: 3rem;
-  text-shadow: 0.2rem 0.2rem #000000;
+  text-shadow: 0.2rem 0.2rem #a6720b;
   animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
 }
 
