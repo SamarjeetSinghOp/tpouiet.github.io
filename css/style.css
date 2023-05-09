@@ -1292,7 +1292,7 @@ body {
   animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
   font-size: 4rem !important;
   text-shadow: 2px 2px #000000;
-  margin-top: 8rem;
+  margin-top: 13rem;
   margin-bottom: 0.5rem;
 }
 
