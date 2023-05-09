@@ -1516,7 +1516,7 @@ body {
   width: 24ch;
   white-space: nowrap;
   overflow: hidden;
-  margin-top: 3rem;
+  margin-top: 9rem;
   margin-bottom: 3rem;
   text-shadow: 0.2rem 0.2rem #a6720b;
   animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
