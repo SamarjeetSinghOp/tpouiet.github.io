@@ -2095,12 +2095,6 @@ body {
   margin-right: 10px;
 }
 
-.social-media i {
-  font-size: 20px;
-  color: #000;
-  text-shadow: 0.1rem 0.1rem #a6720b;
-}
-
 .social-media a {
   color: #fff;
   text-shadow: 0.1rem 0.1rem #a6720b;
@@ -2375,9 +2369,6 @@ hr {
   border-bottom: dashed 1px #000000;
 }
 
-.social-media li {
-  padding: 0.5rem;
-}
 
 .animate-me2 {
   margin-top: 2REM;
