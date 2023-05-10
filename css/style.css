@@ -2422,5 +2422,20 @@ hr {
   -webkit-border-radius: 30px;
   border-radius: 30px;
 overflow: hidden;
-max-width: 800px;
+max-width: 80rem;
+margin-left: 1rem;
+margin-right: 1rem;
+
+}
+
+@media only screen and (max-width: 56.25em) {
+  .location {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+  overflow: hidden;
+  max-width: 80rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 35rem;
+  }
 }
