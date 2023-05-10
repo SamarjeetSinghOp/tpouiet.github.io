@@ -1146,9 +1146,8 @@ body {
   cursor: pointer;
   width: calc(27% - 2rem);
   min-width: calc(27% - 2rem);
-  height: 300px;
-  min-height: 300px;
-  perspective: 1000px;
+  height: 30rem;
+  perspective: 2000px;
   position: relative;
   margin: 2rem;
 }
