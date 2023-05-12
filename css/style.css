@@ -2439,3 +2439,11 @@ margin-right: 1rem;
   height: 35rem;
   }
 }
+
+.edge {
+  border: solid 0.5rem #000;
+  object-fit: cover;
+  height: auto !important;
+  width: 90%;
+border-radius: 10px;
+}
