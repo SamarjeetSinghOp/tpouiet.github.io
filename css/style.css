@@ -1195,7 +1195,7 @@ body {
 
 .single-testimonial {
   border: 0.7rem solid #fff;
-  text-align: justify;
+  text-align: center;
   -webkit-border-radius: 4.5rem;
           border-radius: 4.5rem;
   position: relative;
@@ -1207,9 +1207,9 @@ body {
 
 .single-testimonial p {
   color: #fff;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
-  padding: 2rem;
+  padding: 2.5rem;
   padding-bottom: 3rem;
   padding-top: 5rem;
   position: relative;
@@ -2421,7 +2421,7 @@ hr {
 
 .location {
   -webkit-border-radius: 30px;
-  border-radius: 30px;
+  border-radius: 20px;
 overflow: hidden;
 max-width: 80rem;
 margin-left: 1rem;
