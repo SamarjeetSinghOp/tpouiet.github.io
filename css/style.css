@@ -518,7 +518,7 @@ body {
   left: 0;
   top: 0;
   height: 100%;
-  z-index: 5000;
+  z-index: 45;
   width: 100%;
   background-color: #a6720bd9;
   opacity: 0;
@@ -923,7 +923,7 @@ body {
   right: 6rem;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  z-index: 2000;
+  z-index: 20;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -954,7 +954,7 @@ body {
   right: 6.5rem;
   background-image: -o-radial-gradient(#d59b25, #946300);
   background-image: radial-gradient(#d59b25, #946300);
-  z-index: 1000;
+  z-index: 10;
   -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 1.2s cubic-bezier(0.86, 0, 0.07, 1);
   -o-transition: transform 1.2s cubic-bezier(0.86, 0, 0.07, 1);
@@ -982,7 +982,7 @@ body {
   position: fixed;
   top: 0;
   left: -100%;
-  z-index: 1500;
+  z-index: 15;
   opacity: 0;
   width: 0;
   -webkit-transition: all 1.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -2333,7 +2333,7 @@ svg>g>g.google-visualization-tooltip {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 999999;
 }
 
 .loader i {
@@ -2449,4 +2449,8 @@ max-height: 80rem;
   height: auto !important;
   width: 90%;
 border-radius: 10px;
+}
+
+.ui-dialog {
+ position: fixed !important;
 }

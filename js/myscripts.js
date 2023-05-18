@@ -44,11 +44,13 @@ const buttons = document.querySelectorAll('.button');
 const popups = document.querySelectorAll('.popup');
 const closebtn = document.querySelectorAll('.popup-close');
 const popupContainer = document.querySelectorAll('.popup-container');
+// const uis = document.getElementsByClassName('ui-dialog')
 
 for (let i = 0; i < buttons.length; i++) {
   const button = buttons[i];
   const popup = popups[i];
   const close = closebtn[i];
+  // const ui = uis[i]
   button.addEventListener('click', () => {
     popup.classList.add('is-visible');
   });
@@ -57,12 +59,15 @@ for (let i = 0; i < buttons.length; i++) {
   });
   popup.addEventListener('click', (event) => {
     if (popup.classList.contains('is-visible')) {
-      if (!popupContainer[i].contains(event.target)) {
+      // if (!popupContainer[i].contains(event.target)) {
         popup.classList.remove('is-visible');
-      }
+      // }
     }
   });
-}    
+  // ui.addEventListener('click', () => {
+
+  // })
+}
 
 
 const sections = document.querySelectorAll('.animate-me');
