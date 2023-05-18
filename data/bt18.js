@@ -49,13 +49,20 @@ async function bt2018() {
     };
     var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-bt18'));
     function selectHandler() {
-        var selectedItem = chart.getSelection()[0];
-        if (selectedItem) {
-            $( function() {
-                $( "#dialog" ).dialog();
-              } );
+        let selectedItem = chart.getSelection()[0];
+
+            if (selectedItem) {
+                let topping = data.getValue(selectedItem.row, 0);
+                let test = topping;
+                if (test === 'IDS Infotech')
+                {
+                    $( function() {
+                        $( "#dialog" ).dialog();
+                      } );
+                }
+              }
         }
-      }
+    
 
       google.visualization.events.addListener(chart, 'select', selectHandler);    
     chart.draw(data, options);
