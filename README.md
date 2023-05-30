@@ -48,5 +48,5 @@ The website has following sections :
 Conclusion :
 Website represents bulky and big chunk of placement data in a precise yearwise and branchwise manner.
 
-Copyright
+Copyright: 
 The following website is copyrighted by TPO Cell, UIET KUK and following mentioned contributors and can used only for improvement and maintainence purposes by the students of UIET KUK, No redistribution or no reuse is allowed. 
