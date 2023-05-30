@@ -25,8 +25,8 @@ The brief description about files and folders are given below :
 
 4. JS Folder
 > myscript.js (it contains javascript used in typewriter animation in the headers.)
-> myscript2.js (it contains javascript used in image carousel in "our cell at a glance section")
-> script.js (it contains javascript for particles animation at the background of header)
+> myscript2.js (it contains javascript used in image carousel in "our cell at a glance section.")
+> script.js (it contains javascript for particles animation at the background of header.)
 
 5. index.html
 (main html for the webpage)
