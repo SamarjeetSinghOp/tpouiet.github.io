@@ -31,7 +31,7 @@ The brief description about files and folders are given below :
 5. index.html
 (main html for the webpage)
 
-Brochure :
+Description :
 The website has been made for the UIET, KUK'S TPO Cell to depict placement data in a more convinent and pleasing way.
 Link to the WEBSITE :- https://samarjeetsinghop.github.io/tpouiet.github.io/
 The website has following sections :
