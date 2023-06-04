@@ -2093,6 +2093,14 @@ body {
   text-shadow: 0.1rem 0.1rem #a6720b;
 }
 
+.footer h6 {
+  color: #a6720b;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0;
+  text-shadow: 0.1rem 0.1rem #000000;
+}
+
 .footer p {
   color: #000000;
   font-size: 14px;
@@ -2224,6 +2232,7 @@ span {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
+  
 }
 
 .typed-text {
@@ -2457,4 +2466,17 @@ border-radius: 10px;
  top: 50% !important;
  transform: translate(-50%, -50%) !important;
  background-color: #a6720bd9;
+}
+
+.foot-l {
+  font-size: 1rem;
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+.tdn1 {
+  display: inline;
+  font-size: 13px !important;
 }
