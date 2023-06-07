@@ -1567,7 +1567,7 @@ body {
   -webkit-animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
           animation: type 2s steps(20, end), blink-caret 0.5s step-end infinite;
   font-size: 4rem !important;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px #a6720b;
   margin-top: 13rem;
   margin-bottom: 0.5rem;
 }
@@ -2199,7 +2199,7 @@ body {
 }
 
 .leftAddress a,
-span {
+.leftAddress span {
   font-size: 18px;
   color: #000000;
   text-decoration: none;
