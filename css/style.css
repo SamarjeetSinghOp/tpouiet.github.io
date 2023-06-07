@@ -1712,7 +1712,6 @@ body {
   color: #a6720b;
   font-size: 2rem;
   text-align: center;
-  text-shadow: 0.1rem 0.1rem #000000;
 }
 
 .image {
@@ -1835,7 +1834,6 @@ body {
 .name1 {
   font-size: 1.4rem;
   margin-top: 0.2rem;
-  text-shadow: 0.05rem 0.05rem #000000;
 }
 
 @-webkit-keyframes rotate {
@@ -1884,7 +1882,6 @@ body {
 .tcname {
   font-weight: 600;
   margin-top: 0.6rem;
-  text-shadow: 0.07rem 0.07rem #000000;
 }
 
 .tcdep {
@@ -2090,7 +2087,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-top: 0;
-  text-shadow: 0.1rem 0.1rem #a6720b;
 }
 
 .footer h6 {
@@ -2111,12 +2107,10 @@ body {
   color: #000000;
   font-size: 2rem !important;
   line-height: 1.5;
-  text-shadow: 0.1rem 0.1rem #a6720b;
 }
 
 .footer-text a {
   color: #000000;
-  text-shadow: 0.1rem 0.1rem #a6720b;
 }
 
 .social-media li {
@@ -2195,7 +2189,6 @@ body {
   font-size: 18px;
   margin-right: 16px;
   color: #000;
-  text-shadow: 0.1rem 0.1rem #a6720b;
 }
 
 .leftAddress a,
@@ -2203,7 +2196,6 @@ body {
   font-size: 18px;
   color: #000000;
   text-decoration: none;
-  text-shadow: 0.1rem 0.1rem #a6720b;
 }
 
 @media screen and (max-width: 960px) {
