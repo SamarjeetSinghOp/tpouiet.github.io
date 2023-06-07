@@ -348,10 +348,9 @@ async function bt2023() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["Unavailable", 1]
+        ["Nupore Filteration", 3]
     ]);
     var options = {
-        colors: ['grey'],
         pieHole: 0.4,
         legend: { position: 'bottom' },
         width: '100%',
