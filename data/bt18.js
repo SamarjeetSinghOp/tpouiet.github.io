@@ -233,7 +233,7 @@ async function cse2022() {
 async function cse2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["Deloitte", 6], ["Input Zero Pvt Ltd.", 5], ["Solitaire Infosys", 2], ["TCS", 8], ["Antier Solutions Pvt Ltd", 2], ["Infosys", 9], ["Hexaware", 7], ["Hughes Systique", 2], ["ADP India", 5], ["Embitel Technologies", 17], ["Byteridge Software", 2], ["Indus Valley", 2], ["Yamaha Motors Solution", 10], ["Bebo Educational Foundation", 21], ["Learning Routes", 2]
+        ["Deloitte", 6], ["Input Zero Pvt Ltd.", 5], ["Solitaire Infosys", 2], ["TCS", 8], ["Antier Solutions Pvt Ltd", 2], ["Infosys", 9], ["Hexaware", 7], ["Hughes Systique", 2], ["ADP India", 5], ["Embitel Technologies", 17], ["Byteridge Software", 2], ["Indus Valley", 2], ["Yamaha Motors Solution", 10], ["Bebo Educational Foundation", 21], ["Learning Routes", 2], ["Repozitory", 1], ["Pentagon Space", 4]
     ]);
     var options = {
         pieHole: 0.4,
@@ -348,7 +348,7 @@ async function bt2023() {
 
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["Nupore Filteration", 3]
+        ["Nupore Filteration", 3],["Planet Spark", 1]
     ]);
     var options = {
         pieHole: 0.4,
@@ -583,7 +583,7 @@ async function me2022() {
 async function me2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["ISGEC Heavy Engineering Ltd", 2], ["JSW (TalenTech 2023)", 5], ["Maruti Suzuki India Ltd.", 3]
+        ["ISGEC Heavy Engineering Ltd", 2], ["JSW (TalenTech 2023)", 5], ["Maruti Suzuki India Ltd.", 3], ["Frick India", 2]
     ]);
 
     var options = {
