@@ -59,9 +59,9 @@ for (let i = 0; i < buttons.length; i++) {
   });
   popup.addEventListener('click', (event) => {
     if (popup.classList.contains('is-visible')) {
-      // if (!popupContainer[i].contains(event.target)) {
+      if (!popupContainer[i].contains(event.target)) {
         popup.classList.remove('is-visible');
-      // }
+      }
     }
   });
   // ui.addEventListener('click', () => {
