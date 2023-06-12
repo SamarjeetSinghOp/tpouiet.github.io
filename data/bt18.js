@@ -583,7 +583,7 @@ async function me2022() {
 async function me2023() {
     var data = google.visualization.arrayToDataTable([
         ["Company", "Number of Students"],
-        ["ISGEC Heavy Engineering Ltd", 2], ["JSW (TalenTech 2023)", 5], ["Maruti Suzuki India Ltd.", 3], ["Frick India", 2]
+        ["ISGEC Heavy Engineering Ltd", 4], ["JSW (TalenTech 2023)", 5], ["Maruti Suzuki India Ltd.", 6], ["Frick India", 2],["Ceasefire Industries Private Limited", 2],["Federal Bank", 2],["Avon Cycle", 1], ["Indosaw", 1], ["Daikin AC", 1],["Tega Industry", 2], ["Cheema Boiler", 1]
     ]);
 
     var options = {
