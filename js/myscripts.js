@@ -40,6 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
+var Alert = document.getElementsByClassName("errorAlert");
+var okkButton = document.getElementById("closeButton");
+var AlertBox = document.getElementById("alertBox");
+
+
+for (var i = 0; i < Alert.length; i++) {
+  Alert[i].addEventListener("click", function() {
+    AlertBox.style.visibility='visible'
+  });
+}
+okkButton.addEventListener('click',()=>{
+  AlertBox.style.visibility='hidden'
+})
+
 const buttons = document.querySelectorAll('.button');
 const popups = document.querySelectorAll('.popup');
 const closebtn = document.querySelectorAll('.popup-close');
