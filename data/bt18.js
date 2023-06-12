@@ -20,9 +20,9 @@ google.charts.setOnLoadCallback(
         ec2021();
         ec2022();
         ec2023();
-        me2019();
-        me2020();
-        me2021();
+        // me2019();
+        // me2020();
+        // me2021();
         me2022();
         me2023();
     });
@@ -487,74 +487,74 @@ async function ec2023() {
     chart.draw(data, options);
 }
 
-async function me2019() {
-    var data = google.visualization.arrayToDataTable([
-        ["Company", "Number of Students"],
-        ["Infosys", 10], ["Adani", 1], ["Daikin AC", 2]
-    ]);
+// async function me2019() {
+//     var data = google.visualization.arrayToDataTable([
+//         ["Company", "Number of Students"],
+//         ["Infosys", 10], ["Adani", 1], ["Daikin AC", 2]
+//     ]);
 
-    var options = {
-        pieHole: 0.4,
-        legend: { position: 'bottom' },
-        width: '100%',
-        height: '100%',
-        pieSliceText: 'percentage',
-        chartArea: {
-            left: "3%",
-            top: "3%",
-            height: "84%",
-            width: "94%"
-        }
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-me19'));
-    chart.draw(data, options);
-}
+//     var options = {
+//         pieHole: 0.4,
+//         legend: { position: 'bottom' },
+//         width: '100%',
+//         height: '100%',
+//         pieSliceText: 'percentage',
+//         chartArea: {
+//             left: "3%",
+//             top: "3%",
+//             height: "84%",
+//             width: "94%"
+//         }
+//     };
+//     var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-me19'));
+//     chart.draw(data, options);
+// }
 
-async function me2020() {
-    var data = google.visualization.arrayToDataTable([
-        ["Company", "Number of Students"],
-        ["Infosys", 5]
-    ]);
+// async function me2020() {
+//     var data = google.visualization.arrayToDataTable([
+//         ["Company", "Number of Students"],
+//         ["Infosys", 5]
+//     ]);
 
-    var options = {
-        pieHole: 0.4,
-        legend: { position: 'bottom' },
-        width: '100%',
-        height: '100%',
-        pieSliceText: 'percentage',
-        chartArea: {
-            left: "3%",
-            top: "3%",
-            height: "84%",
-            width: "94%"
-        }
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-me20'));
-    chart.draw(data, options);
-}
+//     var options = {
+//         pieHole: 0.4,
+//         legend: { position: 'bottom' },
+//         width: '100%',
+//         height: '100%',
+//         pieSliceText: 'percentage',
+//         chartArea: {
+//             left: "3%",
+//             top: "3%",
+//             height: "84%",
+//             width: "94%"
+//         }
+//     };
+//     var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-me20'));
+//     chart.draw(data, options);
+// }
 
-async function me2021() {
-    var data = google.visualization.arrayToDataTable([
-        ["Company", "Number of Students"],
-        ["NewGen", 4], ["Thermal Panipat", 1]
-    ]);
+// async function me2021() {
+//     var data = google.visualization.arrayToDataTable([
+//         ["Company", "Number of Students"],
+//         ["NewGen", 4], ["Thermal Panipat", 1]
+//     ]);
 
-    var options = {
-        pieHole: 0.4,
-        legend: { position: 'bottom' },
-        width: '100%',
-        height: '100%',
-        pieSliceText: 'percentage',
-        chartArea: {
-            left: "3%",
-            top: "3%",
-            height: "84%",
-            width: "94%"
-        }
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-me21'));
-    chart.draw(data, options);
-}
+//     var options = {
+//         pieHole: 0.4,
+//         legend: { position: 'bottom' },
+//         width: '100%',
+//         height: '100%',
+//         pieSliceText: 'percentage',
+//         chartArea: {
+//             left: "3%",
+//             top: "3%",
+//             height: "84%",
+//             width: "94%"
+//         }
+//     };
+//     var chart = new google.visualization.PieChart(document.getElementById('ne-food-chart-me21'));
+//     chart.draw(data, options);
+// }
 
 
 async function me2022() {
